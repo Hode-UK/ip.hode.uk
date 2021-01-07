@@ -1,5 +1,7 @@
 # IP Checker - HODE
 
+URL: [ip.hode.uk](https://ip.hode.uk/)
+
 API: [ip.sb](https://ip.sb/api/)
 
 
