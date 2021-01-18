@@ -25,24 +25,24 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RMKFNDK5E0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-RMKFNDK5E0');
     </script>
 
     <script type="application/javascript">
-        function getip(json) {
-            document.write("Your IP address is: ", json.ip);
-        }
-    </script>
-    
-    <script type="application/javascript">
-        function getgeoip(json){
-            document.write("Geolocation information for IP address: ", json.ip);
+        function getgeoip(json) {
+            document.write("Your IP address is: ", "<br>", json.ip);
+            document.write("</br>");
+            document.write("</br>");
             document.write("Country: ", json.country);
-            document.write("Latitude: ", json.latitude);
-            document.write("Longitude: ", json.longitude);
+            document.write("</br>");
+            document.write("</br>");
+            document.write("ISP: ", json.isp);
         }
     </script>
 
