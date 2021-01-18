@@ -36,6 +36,15 @@
             document.write("Your IP address is: ", json.ip);
         }
     </script>
+    
+    <script type="application/javascript">
+        function getgeoip(json){
+            document.write("Geolocation information for IP address: ", json.ip);
+            document.write("Country: ", json.country);
+            document.write("Latitude: ", json.latitude);
+            document.write("Longitude: ", json.longitude);
+        }
+    </script>
 
 </head>
 
@@ -44,6 +53,7 @@
         <img src="https://source.unsplash.com/400x170/?wallpaper">
         <br>
         <script type="application/javascript" src="https://api.ip.sb/jsonip?callback=getip"></script>
+        <script type="application/javascript" src="https://api.ip.sb/geoip?callback=getgeoip"></script>
         <figcaption>
             -BE HAPPY '◡' ♥
         </figcaption>
