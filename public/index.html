@@ -38,8 +38,7 @@
         function getgeoip(json) {
             var delNode = document.getElementsByTagName("tip")[0];
             delNode.parentNode.removeChild(delNode);
-            
-            delNode.innerHTML = "";
+
             document.write("Your IP address is: ", "<br>", json.ip);
             document.write("</br>");
             document.write("</br>");
