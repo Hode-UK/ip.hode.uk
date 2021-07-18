@@ -36,6 +36,9 @@
 
     <script type="application/javascript">
         function getgeoip(json) {
+            var delNode = document.getElementsByTagName("tip")[0];
+            delNode.parentNode.removeChild(delNode);
+
             document.write("Your IP address is: ", "<br>", json.ip);
             document.write("</br>");
             document.write("</br>");
@@ -52,7 +55,9 @@
     <figure>
         <img src="https://source.unsplash.com/400x170/?wallpaper">
         <br>
-        <script type="application/javascript" src="https://api.ip.sb/jsonip?callback=getip"></script>
+        <tip>
+            <p>If you saw this for a long time may mean that your browser blocks API request. Please check!</p>
+        </tip>
         <script type="application/javascript" src="https://api.ip.sb/geoip?callback=getgeoip"></script>
         <figcaption>
             -BE HAPPY '◡' ♥
@@ -64,7 +69,6 @@
             © ₂̆̈ ₀̆̈ ₂̆̈ ₁̆̈ ʜᴏᴅᴇ ᴛᴇᴄʜɴᴏʟᴏɢʏ ʟᴛᴅ.
         </p>
     </footer>
-
 </body>
 
 
